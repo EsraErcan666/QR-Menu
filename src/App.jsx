@@ -1,15 +1,12 @@
-
-import './App.css'
-import Login from './components/Login'
+import React from "react";
+import Basket from "./components/Basket";
 
 function App() {
-
-
-  return (
-    <>
-     <Login/>
-    </>
-  )
+    return (
+        <div className="App">
+            <Basket />
+        </div>
+    );
 }
 
-export default App
+export default App;
