@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "../css/Basket.css";
+import { useNavigate } from "react-router-dom"; // Ekle
 
 const Basket = () => {
     const [cartItems, setCartItems] = useState([
@@ -11,6 +12,8 @@ const Basket = () => {
             quantity: 1,
         },
     ]);
+
+    const navigate = useNavigate(); // Hook tanımı
 
     const increaseQuantity = (id) => {
         setCartItems((prev) =>
@@ -46,7 +49,7 @@ const Basket = () => {
     );
 
     const formatPrice = (price) =>
-        `${price.toLocaleString("tr-TR")} TL`; // ₺ yerine TL
+        `${price.toLocaleString("tr-TR")} TL`;
 
     return (
         <div className="basket-wrapper">
@@ -63,6 +66,12 @@ const Basket = () => {
                             />
                             <h3>Sepetiniz boş</h3>
                             <p>Lütfen ürün ekleyiniz</p>
+                            <button
+                                className="btn-discover"
+                                onClick={() => navigate("/home")}
+                            >
+                                🛍 Ürünleri Keşfet
+                            </button>
                         </div>
                     ) : (
                         <>
@@ -82,7 +91,12 @@ const Basket = () => {
                                         <button onClick={() => decreaseQuantity(item.id)}>-</button>
                                         <span>{item.quantity}</span>
                                         <button onClick={() => increaseQuantity(item.id)}>+</button>
-                                        <button className="remove-btn" onClick={() => removeItem(item.id)}>🗑</button>
+                                        <button
+                                            className="remove-btn"
+                                            onClick={() => removeItem(item.id)}
+                                        >
+                                            🗑
+                                        </button>
                                     </div>
                                 </div>
                             ))}
