@@ -99,11 +99,12 @@ body{
 }
 
 .p-home{
-    font-size: 15px;
+    font-size: 10px;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     color: white;
-    text-align: center;
+    text-align: left;
+    margin-left: 10px;
     transform: translateY(-30px);
     text-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
 }
