@@ -2,14 +2,16 @@ import React from 'react';
 import '../css/Home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBasketShopping } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+    const navigate = useNavigate();
     return (
         <div>
             <div className='background'>
                 <div className='header'>
                     <h2>QREATIONE</h2>
-                    <FontAwesomeIcon icon={faBasketShopping} className='icon' />
+                    <FontAwesomeIcon icon={faBasketShopping} className='icon' onClick={() => navigate('/basket')} />
                 </div>
                 <div className='main-home'>
                     <div className='row-1'>
