@@ -75,7 +75,7 @@
 
 .basket-item-price {
     font-weight: bold;
-    color: #1E88E5;
+    color: black;
     min-width: 80px;
     text-align: right;
 }
@@ -87,8 +87,8 @@
 }
 
 .basket-item-actions button {
-    background-color: #BBDEFB;
-    color: #1E88E5;
+    background-color: black;
+    color: white;
     font-weight: bold;
     border: none;
     border-radius: 50%;
@@ -117,7 +117,7 @@
     font-size: 18px;
     font-weight: bold;
     margin: 16px 0 12px 0;
-    color: #1E88E5;
+    color: black;
 }
 
 /* ✅ Butonları her zaman alta yerleştirmek için ayrı stil */
@@ -134,7 +134,7 @@
 }
 
 .btn-complete {
-    background-color: #1E88E5;
+    background-color: black;
     color: #fff;
     border: none;
     padding: 12px 24px;
@@ -147,14 +147,16 @@
     transition: background 0.2s ease;
 }
 
+
+/*
 .btn-complete:hover {
     background-color: #1565C0;
-}
+}*/
 
 .btn-clear {
     background-color: transparent;
     border: none;
-    color: #1E88E5;
+    color: black;
     font-weight: bold;
     cursor: pointer;
 }
