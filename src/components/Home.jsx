@@ -48,7 +48,12 @@ function Home() {
 
                     <div className='row-2'>
                         <div className='main-home-3'>
-                            <img className='home-image' src={kahve} />
+                            <img
+                                className='home-image'
+                                src={kahve}
+                                onClick={() => navigate('/product?category=soguk-kahveler')}
+                                style={{cursor:'pointer'}}
+                            />
                             <p className='p-home'>SOĞUK KAHVELER</p>
                         </div>
                         <div className='main-home-3'>

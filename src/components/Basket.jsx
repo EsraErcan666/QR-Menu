@@ -55,7 +55,7 @@ const Basket = () => {
         <div className="basket-wrapper">
             <div className="basket-container">
                 <div className="basket-card">
-                    <h2 className="basket-title">🛒 Sepetiniz</h2>
+                    <h2 className="basket-title">🛒</h2>
 
                     {cartItems.length === 0 ? (
                         <div className="basket-empty">
@@ -106,9 +106,9 @@ const Basket = () => {
                             </div>
 
                             <div className="basket-buttons">
-                                <button className="btn-complete">✅ Siparişi Tamamla</button>
+                                <button className="btn-complete">Siparişi Tamamla</button>
                                 <button className="btn-clear" onClick={clearCart}>
-                                    🧹 Sepeti Temizle
+                                     Sepeti Temizle
                                 </button>
                             </div>
                         </>
